@@ -52,7 +52,7 @@ function printHelp(msg) {
 	console.info("\tdelete, create or replication");
 	console.info("\tDBNAME defaults to test_replicator_100xx (where x is incremental)");
 	console.info("\tHOST and PORT defaults to localhost and 5984");
-	console.warn("NUMDB will affect replication with this complexity: (N!/(N-2)!)");
+	console.warn("NUMDB will affect replication with this complexity: (N!/(N-2)!) or simply (N*(N-1))");
 	process.exit(1);
 }
 
