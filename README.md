@@ -1,7 +1,7 @@
 nodejs-couchdb-replication-tester
 =================================
 
-Intensive tester for couchdb with nodejs
+This tool helps the user creating N databases and replications for testing couchdb.
 
 ulimit -n X
 
