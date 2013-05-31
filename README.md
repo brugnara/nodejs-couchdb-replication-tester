@@ -27,3 +27,9 @@ Socket limits based on SO
 =========================
 
 You will need to let your SO open more sockets and "ulimit -n X" may help (where X is at least (N*(N-1)))
+
+Warning
+=======
+
+Replication of 30 or more dbs, will cause process beam.smp (couchdb) to a huge work. If you receive E*** errors, killall beam.smp && couchdb -b will resolve. Try next time with a lower DB.
+Please remember to do "ulimit -n XXX" (where XXX = N*(N-1)) as root.
