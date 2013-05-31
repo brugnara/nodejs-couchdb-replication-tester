@@ -56,7 +56,7 @@ function printHelp(msg) {
 	process.exit(1);
 }
 
-http.globalAgent.maxSockets = 100000;
+http.globalAgent.maxSockets = MAX_DB * (MAX_DB -1) +1;
 
 function getDbName(i) {
 	return DB_NAME + "_" + (10000 + i);
