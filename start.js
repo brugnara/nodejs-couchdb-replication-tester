@@ -3,7 +3,7 @@ var MAX_DB = 20
   , HOST = "localhost"
   , PORT = 5984
   , http = require("http")
-  , deleteFirst // se true, cancella invece di creare i db
+  , deleteFirst
   , doRpl
   , doCreation
 
@@ -75,7 +75,6 @@ var onResponse = function(res) {
 };
 
 function doRequest(index) {
-	// creo db
 	var options = {
 		host : HOST,
 		port : PORT,
